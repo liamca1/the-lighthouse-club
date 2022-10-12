@@ -57,7 +57,7 @@
   margin: 2%;
   border: solid 1px #ffffff;
   border-radius: 50px;
-  background-color: #ffd900;
+  background-color: rgba(255, 217, 0, 0.468);
 }
 
 .flex-item-2 {
@@ -65,7 +65,7 @@
   margin: 2%;
   border: solid 1px #ffffff;
   border-radius: 50px;
-  background-color: #ea00ff;
+  background-color: rgba(234, 0, 255, 0.399);
 }
 
 .flex-item-3 {
@@ -73,7 +73,7 @@
   margin: 2%;
   border: solid 1px #ffffff;
   border-radius: 50px;
-  background-color: #00ff91;
+  background-color: rgba(0, 255, 145, 0.416);
 }
 
 .flex-item-4 {
@@ -108,10 +108,6 @@
 
 .footer .title-bar {
   font-size: 16px !important;
-}
-
-.form-element {
-  padding: 5%;
 }
 
 .fandango-logo {
@@ -172,6 +168,7 @@
   padding: 15px !important;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+  width: 80vw;
 }
 
 .flex-item-body {

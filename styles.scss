@@ -68,7 +68,7 @@
   margin: 2%;
   border: solid 1px #ffffff;
   border-radius: 50px;
-  background-color: rgb(255, 217, 0);
+  background-color: rgba(255, 217, 0, 0.468);
 }
 
 .flex-item-2 {
@@ -76,7 +76,7 @@
   margin: 2%;
   border: solid 1px #ffffff;
   border-radius: 50px;
-  background-color: rgb(234, 0, 255);
+  background-color: rgba(234, 0, 255, 0.399);
 }
 
 .flex-item-3 {
@@ -84,7 +84,7 @@
   margin: 2%;
   border: solid 1px #ffffff;
   border-radius: 50px;
-  background-color: rgb(0, 255, 145);
+  background-color: rgba(0, 255, 145, 0.416);
 }
 
 .flex-item-4 {
@@ -116,12 +116,6 @@
   .title-bar {
     font-size: 16px !important;
   }
-}
-
-.form-element {
-  padding: 5%;
-  // border: solid 1px white;
-  // border-radius: 50px;
 }
 
 // .title-bar {
@@ -188,6 +182,7 @@
   padding: 15px !important;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
+  width: 80vw;
 }
 
 .flex-item-body {
