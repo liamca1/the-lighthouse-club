@@ -10,10 +10,11 @@
   
 </head>
 <body>
-
-  <script type="text/javascript">var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
-      onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+  <script>
+    document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+      this.currentTime = 50;
+    }, false);
+      </script> 
 
   <div class="main">
     <div class="flex-container">
@@ -37,8 +38,10 @@
 
 
         <video autoplay muted loop id="myVideo">
-          <source src="/img/Lighthouse-video.mp4" type="video/mp4">
+          <source id="myVideo" src="/img/Lighthouse-video.mp4" type="video/mp4">
         </video>
+
+        
 
       </div>
         </div>
@@ -46,6 +49,8 @@
     </div>
   </div>
   </div>
+
+
 
 </body>
 

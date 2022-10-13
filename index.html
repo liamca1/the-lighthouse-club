@@ -15,6 +15,12 @@
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
       onload="if(submitted) {window.location='thankyou.html';}"></iframe>
 
+      <script>
+        document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+          this.currentTime = 50;
+        }, false);
+          </script> 
+
   <div class="main">
     <div class="flex-container">
 
@@ -49,13 +55,14 @@
       <div class="flex-container">
         <div class="flex-item-4 top">
           <div class="flex-item-body-foot">
-            <h1>We invite you to the inauguration of our new lighthouse space from sunrise until midnight on Sunday October 30th.</h1>
             <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScfoVhdxeigaqZXRHH24_xqHcqzx3K9sETEwQJFcrjlV68sBw/viewform?embedded=true" width="100%" height="auto" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
             <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScfoVhdxeigaqZXRHH24_xqHcqzx3K9sETEwQJFcrjlV68sBw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-              
+               <p><b>Guest List</b><br>Free Entry before 7:00<br>€8 after 7:00</p><br>
                <input type="text" name="entry.89104672" placeholder="your full name" class="input" required><br><br>
                <p>Please provide a short response to the following anti-spam question: <br> Animals are nice because ...</p>
-               <input type="email" name="entry.52674081" placeholder="please provide a short answer here ..." class="input" required><br><br>
+               <br>
+               <input type="text" name="entry.52674081" placeholder="please provide a short answer here ..." class="input" required><br><br>
+               <input type="email" name="entry.1811708512" placeholder="please enter your email" class="input-email"><br><br>
 
                <!-- <div class="g-recaptcha" data-sitekey="6LfAcckhAAAAAJEGJZ3LL9xOwIpWAvY83ujx3KBt"></div><br> -->
                
@@ -70,7 +77,7 @@
 
 
         <video autoplay muted loop id="myVideo">
-          <source src="/img/Lighthouse-video.mp4" type="video/mp4">
+          <source id="myVideo" src="/img/Lighthouse-video.mp4" type="video/mp4">
         </video>
 
       </div>

@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "OptimaLTPro";
+  src: url("./fonts/Optima/OptimaLTPro-Bold.otf");
+}
+
+p {
+  font-family: 'OptimaLTPro';
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -50,48 +61,44 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 92vw;
 }
 
 .flex-item-1 {
-  width: 100%;
-  margin: 2%;
+  margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
   background-color: #FFB900;
 }
 
 .flex-item-2 {
-  width: 100%;
-  margin: 2%;
+  margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: rgba(234, 0, 255, 0.399);
+  background-color: #FF4200;
 }
 
 .flex-item-3 {
-  width: 100%;
-  margin: 2%;
+  margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: rgba(0, 255, 145, 0.416);
+  background-color: #541617;
 }
 
 .flex-item-4 {
-  width: 100%;
-  margin: 2%;
+  margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: rgba(0, 255, 229, 0.49);
+  background-color: #FFE5CC;
 }
 
 .flex-item-5 {
-  width: 100%;
-  margin: 2%;
+  margin-top: 2%;
   border-radius: 50px;
 }
 
 .logo {
-  width: 91%;
+  width: 90vw;
 }
 
 .logo .title-bar {
@@ -101,15 +108,11 @@
 }
 
 .top {
-  width: 91%;
+  width: 90vw;
 }
 
 .top .title-bar {
   font-size: 16px !important;
-}
-
-.footer {
-  width: 91%;
 }
 
 .footer .title-bar {
@@ -142,18 +145,8 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .flex-item {
-    width: 90%;
-  }
   .fandango-logo {
     width: 50vw;
-  }
-  .item-1 {
-    width: 80vw !important;
-    height: auto;
-  }
-  .thank-you {
-    width: 80vw !important;
   }
   .flex-item-body {
     font-family: Arial, Helvetica, sans-serif;
@@ -168,12 +161,12 @@
 .input {
   height: 28px !important;
   font-size: 16px !important;
-  border: solid 1px #FFE5CC;
+  border: solid 1px black;
   border-radius: 50px;
   background-color: transparent;
   padding: 15px !important;
   font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
+  color: black;
   width: 80vw;
 }
 
@@ -186,8 +179,8 @@
 
 .flex-item-body-foot {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2%;
-  color: white;
+  padding: 3%;
+  color: black;
   /* Fallback for older browsers */
 }
 
@@ -202,17 +195,25 @@ h1 {
 .button {
   height: 28px !important;
   font-size: 16px !important;
-  border: solid 1px #FFE5CC;
+  border: solid 1px black;
   border-radius: 50px;
   background-color: transparent;
   padding-left: 15px !important;
   padding-right: 15px !important;
   font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
+  color: black;
 }
 
 .item-1 {
   width: 60vh;
+  margin-top: 2%;
   padding-bottom: 20px;
+}
+
+.input-email {
+  border: solid 1px rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
+  position: absolute;
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */
