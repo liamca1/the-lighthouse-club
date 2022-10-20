@@ -1,18 +1,25 @@
 @font-face {
-  font-family: "OptimaLTPro";
-  src: url("./fonts/Optima/OptimaLTPro-Bold.otf");
+  font-family: "Basteleur";
+  src: url("./fonts/Basteleur-Moonlight.otf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.otf");
+}
+
+h1 {
+  font-family: 'Basteleur';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
 }
 
 p {
-  font-family: 'OptimaLTPro';
+  font-family: 'Inter';
   font-weight: normal;
   font-style: normal;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0px;
+  font-size: 18px;
 }
 
 #myVideo {
@@ -68,28 +75,87 @@ p {
   margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: #FFB900;
+  background-color: #ea00ff5d;
+}
+
+.flex-item-ty-1 {
+  margin-top: 2%;
+  border: solid 1px #FFE5CC;
+  border-radius: 50px;
+  background-color: #ffbb0089;
+}
+
+.flex-item-ty-2 {
+  margin-top: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  border: solid 1px #FFE5CC;
+  border-radius: 50px;
+  background: linear-gradient(124deg, #fff20085, #1ddee880, #df00f37f);
+  padding: 2%;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 2%;
+  margin: .5%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin: 30px;
+}
+
+.flex-item-ty-3 {
+  margin-top: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  border: solid 1px #FFE5CC;
+  border-radius: 50px;
+  background: linear-gradient(124deg, #df00f38d, #fbff0080, #ff95007d);
+  padding: 2%;
+  text-align: center;
+}
+
+.flex-item-ty-4 {
+  margin-top: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  border: solid 1px #FFE5CC;
+  border-radius: 50px;
+  background: linear-gradient(124deg, #ff950085, #00ffb38d, #ff00008c);
+  padding: 2%;
+  text-align: center;
 }
 
 .flex-item-2 {
   margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: #FF4200;
+  background-color: #ff44008a;
+  text-align: center;
 }
 
 .flex-item-3 {
   margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: #541617;
+  background-color: #5416177c;
+  text-align: center;
 }
 
 .flex-item-4 {
   margin-top: 2%;
   border: solid 1px #FFE5CC;
   border-radius: 50px;
-  background-color: #FFE5CC;
+  background-color: #ffe5cc8f;
+  text-align: center;
 }
 
 .flex-item-5 {
@@ -135,7 +201,7 @@ p {
   width: 60vh !important;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -149,12 +215,14 @@ p {
     width: 50vw;
   }
   .flex-item-body {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 5% !important;
   }
   .flex-item-body-foot {
-    font-family: Arial, Helvetica, sans-serif;
     padding: 5% !important;
+  }
+  .dropdown:actice .dropdown-content {
+    display: block;
+    margin: 30px;
   }
 }
 
@@ -165,31 +233,20 @@ p {
   border-radius: 50px;
   background-color: transparent;
   padding: 15px !important;
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
-  width: 80vw;
+  width: 75vw;
 }
 
 .flex-item-body {
-  font-family: Arial, Helvetica, sans-serif;
   padding: 2%;
   color: #ffffff;
   -webkit-text-stroke: .25px pink;
 }
 
 .flex-item-body-foot {
-  font-family: Arial, Helvetica, sans-serif;
   padding: 3%;
   color: black;
   /* Fallback for older browsers */
-}
-
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 2%;
-  color: #000;
-  /* Fallback for older browsers */
-  color: rgba(255, 255, 255, 0);
 }
 
 .button {
