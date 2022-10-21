@@ -35,6 +35,11 @@ p {
   z-index: -1;
 }
 
+.mobile-background {
+  visibility: hidden;
+  height: 2px;
+}
+
 .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,6 +230,7 @@ p {
     margin: 30px;
   }
   #mobile-background {
+    visibility: visible;
     width: 100vw;
     height: 100vh;
     -o-object-fit: cover;
